@@ -1,0 +1,14 @@
+  Beginers:
+
+  ☐ React
+  ☐ Jsx
+  ☐ Custom Component  (children , props , React.createElement)
+  ☐ PropTypes  (optional requires typeOf(), shape )
+  ☐ render null or componnet
+  ☐ style + class
+  ☐ state
+  ☐ stateLess and stateFull
+  ☐ lifecycle
+  ☐ events (this bind fatarrow proxy)
+  ☐ constroled vs uncontroled elements
+  ☐ Refs
