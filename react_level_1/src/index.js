@@ -9,12 +9,12 @@ import './index.css';
 // registerServiceWorker();
 
 
-var root = document.querySelector('#root')
-console.log(root)
-var el = document.createElement('div')
-el.textContent = 'AAAAA'
-el.className = 'test'
-root.appendChild(el)
+// var root = document.querySelector('#root')
+// console.log(root)
+// var el = document.createElement('div')
+// el.textContent = 'AAAAA'
+// el.className = 'test'
+// root.appendChild(el)
 
 //
 //
