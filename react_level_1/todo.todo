@@ -2,6 +2,7 @@
 
   ✔ React @done(2017-12-19 15:29)
   ✔ Jsx @done(2017-12-19 15:29)
+  ☐ ES6
   ☐ Custom Component  (children , props , React.createElement)
   ☐ PropTypes  (optional requires typeOf(), shape )
   ☐ render null or componnet
