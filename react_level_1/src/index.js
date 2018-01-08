@@ -5,10 +5,12 @@ import './index.css'
 import PropTypes from 'prop-types';
 // import registerServiceWorker from './registerServiceWorker';
 import { TestJS, TestReact } from './WhyReact'
+
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // TestJS()
-TestReact()
+// TestReact()
 // registerServiceWorker();
 
 // var root = document.querySelector('#root')

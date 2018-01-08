@@ -1,16 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const User = ({ title, name }) => (
-  <div className="user">
-    <div className="img"></div>
-    <div className="data">
-      <div className="title">{title}</div>
-      <div className="name">{name}</div>
-    </div>
-  </div>
-)
-//
+const style2 = {
+  border: '1px solid red'
+}
+
+const User = ({ style, ...all }) => {
+    console.log(style)
+    const combined = { ...style2, ...style}
+    return (
+      <div className="user" style={combined} >
+        <div className="img"></div>
+        <div className="data">
+          <div className="title">{all.title}</div>
+          <div className="name">{all.name}</div>
+        </div>
+      </div>
+    )
+}
+
 // const PropTypes = {
 //   string: (...args) => {  // props, propName,  ComponentName
 //     const [props, propName, ComponentName] = args
@@ -23,9 +31,10 @@ const User = ({ title, name }) => (
 //   }
 // }
 
+
 User.propTypes = {
-  name: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  name: PropTypes.string,
+  title: PropTypes.string
 }
 
 
