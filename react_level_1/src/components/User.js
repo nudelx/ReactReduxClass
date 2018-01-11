@@ -6,7 +6,7 @@ const style2 = {
 }
 
 const User = ({ style, ...all }) => {
-    console.log(style)
+    console.log('render')
     const combined = { ...style2, ...style}
     return (
       <div className="user" style={combined} >
