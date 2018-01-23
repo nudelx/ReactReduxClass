@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import User from './components/User'
+import Timer from './components/Timer'
 // import Timer, {startTimer} from './components/timer'
 const userProps = {
   title: 'Master Jedi',
@@ -29,13 +30,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
+        {/* <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        {b.map((item) => <User key={item} title={`${a.title}${item}`} name={`${a.name}${item}`} />)}
+        </p> */}
+        {/* {b.map((item) => <User key={item} title={`${a.title}${item}`} name={`${a.name}${item}`} />)} */}
 
         {/* <Timer time={this.props.state.time}/>
         {startTimer(state)} */}
+        <Timer />
       </div>
 
     );
