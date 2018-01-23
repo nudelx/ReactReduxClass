@@ -27,6 +27,8 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // NOT React
 
 
+
+
 // var createAlex = (msg, className , element) => {
 //   var root = element || document.querySelector('#root')
 //   console.log(root)
