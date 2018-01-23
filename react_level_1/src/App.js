@@ -2,12 +2,26 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import User from './components/User'
+// import Timer, {startTimer} from './components/timer'
 const userProps = {
   title: 'Master Jedi',
   name: 'Yoda'
 }
 
+const style = {
+  backgroundColor: '#000'
+}
+
+const style2 = {
+  border: '1px solid red'
+}
+
+const a = { title: "Master Jedi", name:"Yoda"}
+const b = [1,2,3,4,5]
+
+
 class App extends Component {
+
   render() {
     return (
       <div className="App">
@@ -18,11 +32,12 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <User title='Master Jedi' name='Yoda'/>
-        <User title='Master Jedi1' name='Yoda1'/>
-        <User title='Master Jedi2' name='Yoda2'/>
-        <User title='Master Jedi3' name='Yoda3'/>
+        {b.map((item) => <User key={item} title={`${a.title}${item}`} name={`${a.name}${item}`} />)}
+
+        {/* <Timer time={this.props.state.time}/>
+        {startTimer(state)} */}
       </div>
+
     );
   }
 }

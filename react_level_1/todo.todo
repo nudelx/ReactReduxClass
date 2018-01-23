@@ -2,12 +2,12 @@
 
   ✔ React @done(2017-12-19 15:29)
   ✔ Jsx @done(2017-12-19 15:29)
+  ✔ render null or componnet @done(2018-01-04 11:20)
   ✔ ES6 (destructure, destructure and rename , sparead) @done(2017-12-28 14:31)
-  ☐ Custom Component  (children , props , React.createElement)
-  ☐ imports
-  ☐ PropTypes  (optional requires typeOf(), shape )
-  ☐ render null or componnet
-  ☐ style + class
+  ✔ Custom Component  (children , props , React.createElement) @done(2018-01-04 10:30)
+  ✔ imports @done(2018-01-04 10:30)
+  ✔ PropTypes  (optional requires typeOf(), shape ) @done(2018-01-04 14:32)
+  ✔ style + class @done(2018-01-04 14:47)
   ☐ state
   ☐ stateLess and stateFull
   ☐ lifecycle
