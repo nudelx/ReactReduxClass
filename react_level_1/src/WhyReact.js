@@ -16,7 +16,6 @@ export const TestJS = () => {
 export const TestReact = () => {
   const body = document.querySelector('#root')
   const ReactWay = function() {
-    // console.log('ddddd')
     const time = new Date().toLocaleTimeString()
     const element = (<div>TIME:<input value={time} /><input value={time} /> </div>)
     ReactDOM.render(element, body )

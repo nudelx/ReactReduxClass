@@ -10,6 +10,7 @@ class Timer extends React.Component {
   }
 
   startTimer = () => {
+    if (this.state.timer) return
     const timer = setInterval(() => {
       this.setState({ timerValue: this.state.timerValue + 1 })
     }, 1)
@@ -19,6 +20,7 @@ class Timer extends React.Component {
 
   stopTimer = () => {
     clearInterval(this.state.timer)
+    this.setState({ timer: null })
   }
 
   resetTimer = () => {

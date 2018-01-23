@@ -11,7 +11,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 // TestJS()
 // TestReact()
-// registerServiceWorker();
 
 // var root = document.querySelector('#root')
 // console.log(root)
