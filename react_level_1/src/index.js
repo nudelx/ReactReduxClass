@@ -6,8 +6,9 @@ import PropTypes from 'prop-types';
 // import registerServiceWorker from './registerServiceWorker';
 import { TestJS, TestReact } from './WhyReact'
 
+// ReactDOM.render(<App />, document.getElementById('root'));
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
 
 // TestJS()
 // TestReact()
@@ -18,6 +19,12 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // el.textContent = 'Alex'
 // el.className = 'test'
 // root.appendChild(el)
+
+// 
+// ReactDOM.render(
+//   React.createElement('div', {children: 'Alex'}),
+//   document.querySelector('#root')
+// );
 
 //
 //
@@ -91,26 +98,3 @@ ReactDOM.render(<App />, document.getElementById('root'));
 //   ,
 //   document.querySelector('#root')
 // )
-
-
-
-
-// ReactDOM.render(React.createElement(
-//   AlexComponent,
-//   null,
-//   React.createElement(
-//     'div',
-//     null,
-//     'I am a kid',
-//     React.createElement(
-//       'div',
-//       null,
-//       'I am a kid ',
-//       React.createElement(
-//         'div',
-//         null,
-//         'I am a kid'
-//       )
-//     )
-//   )
-// ), document.querySelector('#root'));
