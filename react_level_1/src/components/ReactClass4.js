@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 
 class ReactClass4 extends Component {
-
+  // more https://reactjs.org/docs/react-component.html
   // mounting
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = { test: true}
   }
+
+  toggleState = () => this.setState({test: !this.state.test })
 
   componentWillMount() {
     console.log('componentWillMount', arguments)
@@ -14,7 +16,7 @@ class ReactClass4 extends Component {
 
   render () {
     console.log('render', arguments)
-    return (<div>{'render'}</div>)
+    return (<div onClick={this.toggleState}>{'render'}</div>)
   }
 
   componentDidMount() {
@@ -27,7 +29,9 @@ class ReactClass4 extends Component {
   }
 
   shouldComponentUpdate() {
+
     console.log('shouldComponentUpdate', arguments)
+    return true
   }
 
   componentDidUpdate() {

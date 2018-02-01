@@ -26,10 +26,7 @@ class App extends Component {
         {/* <ReactClass3/> */}
         { view && <ReactClass4/> }
         <button onClick={this.toggle}> {'rerender'} </button>
-
-
         {/* <Timer /> */}
-          {/* <User name='Yonatan' title='Jedi'/> */}
       </div>
 
     );
