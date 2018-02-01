@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 // import registerServiceWorker from './registerServiceWorker';
 import { TestJS, TestReact } from './WhyReact'
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
 
@@ -20,9 +20,9 @@ import { TestJS, TestReact } from './WhyReact'
 // el.className = 'test'
 // root.appendChild(el)
 
-// 
+
 // ReactDOM.render(
-//   React.createElement('div', {children: 'Alex'}),
+//   React.createElement('div', {children: 'Alex', className: 'test'}),
 //   document.querySelector('#root')
 // );
 

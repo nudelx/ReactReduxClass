@@ -33,11 +33,12 @@ class App extends Component {
         {/* <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p> */}
-        {/* {b.map((item) => <User key={item} title={`${a.title}${item}`} name={`${a.name}${item}`} />)} */}
+        {b.map((item) => <User key={item} title={`${a.title}${item}`} name={`${a.name}${item}`} />)}
 
         {/* <Timer time={this.props.state.time}/>
         {startTimer(state)} */}
         <Timer />
+          {/* <User name='Yonatan' title='Jedi'/> */}
       </div>
 
     );
