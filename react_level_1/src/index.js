@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React  from 'react'
 import ReactDOM from 'react-dom'
 import App from './App';
 import './index.css'
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 // import registerServiceWorker from './registerServiceWorker';
-import { TestJS, TestReact } from './WhyReact'
+// import { TestJS, TestReact } from './WhyReact'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
