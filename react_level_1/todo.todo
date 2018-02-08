@@ -8,9 +8,9 @@
   ✔ imports @done(2018-01-04 10:30)
   ✔ PropTypes  (optional requires typeOf(), shape ) @done(2018-01-04 14:32)
   ✔ style + class @done(2018-01-04 14:47)
-  ☐ state
-  ☐ stateLess and stateFull
-  ☐ lifecycle
+  ✔ state @done(2018-02-08 10:48)
+  ✔ stateLess and stateFull @done(2018-02-08 10:48)
+  ✔ lifecycle @done(2018-02-08 10:48)
   ☐ events (this bind fatarrow proxy)
   ☐ constroled vs uncontroled elements
   ☐ Build timer

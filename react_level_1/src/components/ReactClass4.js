@@ -5,7 +5,7 @@ class ReactClass4 extends Component {
   // mounting
   constructor(props) {
     super(props);
-    this.state = { test: true}
+    this.state = { test: true }
   }
 
   toggleState = () => this.setState({test: !this.state.test })
@@ -16,7 +16,7 @@ class ReactClass4 extends Component {
 
   render () {
     console.log('render', arguments)
-    return (<div onClick={this.toggleState}>{'render'}</div>)
+    return (<div onClick={this.toggleState}>{'blaaa'}</div>)
   }
 
   componentDidMount() {
