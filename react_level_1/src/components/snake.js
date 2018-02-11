@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-
 class Snake extends Component {
 
   state = {
@@ -25,12 +24,17 @@ class Snake extends Component {
 
   updatePosition = (e) =>  {
     const { calcStep } = this.state
-    const { height,  width, step } = this.props
+    const { height,  width, step, foodY, foodX, toggleFood} = this.props
+    console.log(this.props)
     const { [e.code]: { axis, sign } } = calcStep
     const { [axis]: axisValue } = this.state
 
     this.setState({
       [axis]: this.magicMove(axis, axisValue +(step*sign))
+    }, () => {
+        if (foodY === this.state.y && foodX === this.state.x) {
+          toggleFood()
+        }
     })
   }
 
@@ -43,8 +47,6 @@ class Snake extends Component {
     return (
       <div className='snake'>
         <div className='snake-head' style={{top: this.state.y, left: this.state.x}}></div>
-        <div className='snake-tail'></div>
-        <div className='snake-tail'></div>
       </div>
     )
   }
