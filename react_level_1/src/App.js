@@ -6,7 +6,7 @@ import Timer from './components/Timer'
 import ReactClass3 from './components/ReactClass3'
 import ReactClass4 from './components/ReactClass4'
 // import Timer, {startTimer} from './components/timer'
-
+import SnakeGame from './components/snakeGame'
 
 class App extends Component {
 
@@ -25,7 +25,8 @@ class App extends Component {
         {/* <ReactClass3/> */}
         {/* { view && <ReactClass4/> } */}
         {/* <button onClick={this.toggle}> {'rerender'} </button> */}
-        <Timer />
+        {/* <Timer /> */}
+        <SnakeGame />
       </div>
 
     );
