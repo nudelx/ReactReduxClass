@@ -6,7 +6,6 @@ class Snake extends Component {
   state = {
     x: 300,
     y: 300,
-    step: 20,
     calcStep: {
       'KeyI': {'axis': 'y', sign: -1},
       'KeyJ': {'axis': 'x', sign: -1},
@@ -26,9 +25,9 @@ class Snake extends Component {
 
   updatePosition = (e) =>  {
     const { calcStep } = this.state
-    const { height,  width } = this.props
+    const { height,  width, step } = this.props
     const { [e.code]: { axis, sign } } = calcStep
-    const { [axis]: axisValue, step } = this.state
+    const { [axis]: axisValue } = this.state
 
     this.setState({
       [axis]: this.magicMove(axis, axisValue +(step*sign))
