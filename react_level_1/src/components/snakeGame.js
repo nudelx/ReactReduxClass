@@ -2,19 +2,32 @@ import React, { Component } from 'react'
 import Board from './board'
 import Snake from './snake'
 import Food from './food'
+import StartButton from './startButton'
 
 class SnakeGame extends Component {
   state = {
-    width: 920,
-    height: 700,
-    step: 20,
+    width: 0,
+    height: 0,
+    step: 32,
     foodX: 0,
     foodY: 0,
-    foodVisible: false
+    foodVisible: false,
+    gameRunning: false
+  }
+  componentWillMount() {
+    this.setBackgroudDimensions()
   }
 
-  componentDidMount() {
-    this.calcFoodPosition()
+  setBackgroudDimensions() {
+    const w = window.outerWidth * 0.95
+    const h = window.outerHeight * 0.7
+    this.setState(
+      {
+        width: w - w % this.state.step,
+        height: h - h % this.state.step
+      },
+      () => this.calcFoodPosition()
+    )
   }
 
   toggleFood = () =>
@@ -27,6 +40,8 @@ class SnakeGame extends Component {
     return Math.floor(Math.random() * max) + min
   }
 
+  startTheGame = () => this.setState({ gameRunning: true })
+
   calcFoodPosition() {
     let foodX = this.randomPosition(this.state.width, 0)
     let foodY = this.randomPosition(this.state.height, 0)
@@ -35,14 +50,32 @@ class SnakeGame extends Component {
     this.setState({ foodX, foodY, foodVisible: true })
   }
 
-  render() {
+  renderGame() {
     const { foodX, foodY, foodVisible } = this.state
     return (
-      <div>
-        <Board {...this.state}>
-          <Snake {...this.state} foodX={foodX} foodY={foodY} toggleFood={this.toggleFood}/>
-          {foodVisible && <Food foodX={foodX} foodY={foodY} />}
-        </Board>
+      <Board {...this.state}>
+        <Snake
+          {...this.state}
+          foodX={foodX}
+          foodY={foodY}
+          toggleFood={this.toggleFood}
+        />
+        {foodVisible && <Food foodX={foodX} foodY={foodY} />}
+      </Board>
+    )
+  }
+
+  render() {
+    const { gameRunning } = this.state
+    return (
+      <div >
+
+          {gameRunning ? (
+            this.renderGame()
+          ) : (
+            <Board {...this.state}> <StartButton onClick={this.startTheGame} /> </Board>
+          )}
+
       </div>
     )
   }
